@@ -1,0 +1,6 @@
+@Kartlegging_websocket_prosjekt_backend_HostAddress = http://localhost:5145
+
+GET {{Kartlegging_websocket_prosjekt_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
