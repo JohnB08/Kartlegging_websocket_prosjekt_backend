@@ -48,6 +48,7 @@ app.Map("/{name}", async (HttpContext context, string? name) => {
     }
     finally
     {
+        await connectionHandler.BroadcastAsync($"{name} has disconnected...", name);
         connectionHandler.RemoveConnection(name);
     }
 });
